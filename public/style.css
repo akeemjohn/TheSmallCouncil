@@ -296,6 +296,7 @@ fieldset legend {
     height: 30px;
     margin-right: 2%;
     margin-left: 2%;
+    background-color: #FDFDFD
   }
 
   .container {
@@ -326,6 +327,7 @@ fieldset legend {
     height: 6em;
     overflow: hidden;
     font-size: 0.75em;
+    background-color: #FDFDFD;
   }
 
   .time-stamp, .comment-count, .author-name {
