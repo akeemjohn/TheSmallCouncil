@@ -1,39 +1,45 @@
-The purpose of this app is to be a social platform for GOT enthusists. 
+# The Small Council
+<p align='center'>
+    <img width='600' height='450'src='https://imgur.com/a/Ca3hz'>	
+</p>
 
-Users are able to Post content and comment on peoples posts describing their thoughts/ opinions of the said post. 
+## PURPOSE
 
-This app was built using the following technologies for the back-end:     
+A Reddit-style forum in which Game of Thrones enthusiats can create discussion threads about the show, or participate in existing discussions.
 
-    "body-parser": "^1.18.2",
-    "chai": "^4.1.2",
-    "chai-http": "^3.0.0",
-    "express": "^4.16.2",
-    "faker": "^4.1.0",
-    "mocha": "^4.0.1",
-    "mongo": "^0.1.0",
-    "mongoose": "^4.13.6",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.12.5",
-    "path": "^0.12.7",
-    "travis": "^0.1.1",
-    "travis-cli": "^1.0.9"
-
-We used jquery, html, javascript, and CSS for the front end.
-
-Version 1 features include:
-
-    Our REST API with given endpoints which allow a user to add content including new posts and comments of posts. 
-
-    We built a feature to the UI so when viewing the POSTS they are sorted in order for the most recent content to be at the top of the page.
-    The Comments section on each post is dynamic to count the number of comments each individual post has. 
-
-Version 2 features we would like to include:
-
-    Authentication for users to be able to sign up and login in. This will allo the app to identify the author by the user who logs in.
-
-Version 3 features we would like to include:
-
-    Post Categories. We would like to include a list of preset categories in which one can search for what they are looking for specifically and submit their posts to the appropriate category they are looking to talk about
+[LIVE Demo](http://thesmallcouncil.herokuapp.com/)
 
 
+## TECH STACK
+* JavaScript
+* JQuery
+* Node.js/Express 
+* MongoDB/Mongoose
+* Mocha/Chai for server-side testing
 
+### TL;DR
+Server supports the following: 
+
+* GET existing posts from database
+* POST new forum post
+* POST comment to existing forum post
+
+TODO: 
+
+* Add authentication so users can log in and out
+* Add categorization to posts
+* Add an ability to rate posts and comments (or upvote)
+
+## CONTRIBUTE?
+
+Install Node and npm, clone/fork the repo and run the following command in your project folder to install all of the dependencies:
+    
+    `npm install`
+
+## ACKNOWLEDGEMENTS
+Shouts to open source community for any code borrowed, libraries used, etc..
+
+## DEVS 
+
+* [Nicole G](https://github.com/nicoledanielle)
+* [Ryan S](https://github.com/sabora920)
