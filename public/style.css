@@ -1,0 +1,136 @@
+body {
+  background-color: #F2EEE0;
+  background-image: url('/images/GOT_wallpaper.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+
+.opacity-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+.opacity-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#nav, #signup, #login, #protected, #search, #detail, #create, #comment-wizard, #edit {
+  z-index: 10;
+  position: relative;
+}
+
+h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+h2 {
+  size: 1em;
+  font-weight: 900;
+  color: #C72230
+}
+
+h3 {
+  size: 1em;
+  font-weight: 400;
+  color: #333036;
+}
+
+nav a, a:visited {
+  color: #333036;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+
+form, section {
+  margin-top: 10px;
+}
+label {
+  display: block;
+  display:inline-block;
+  width: 80px;
+}
+
+button, input[type=submit] {
+  height: 30px;
+  width: 100px;
+  background-color: #C72230;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #C72230;
+  border: 1px solid #333036;
+  color: #F2EEE0;
+  font-weight: 400 
+}
+
+button:hover {
+  color: #333036;
+  background-color: #F2EEE0;
+  border: 1px solid #C72230;
+}
+
+.list-results .comment-count {
+  text-align: right !important;
+}
+
+.list-results {
+  list-style-type: none;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #333036;
+}
+
+.time-stamp, .comment-count, .author-name {
+  margin: 20px;
+  padding: 5px;
+  font-size: .75em;
+}
+
+#nav {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  display: inline
+}
+
+#search,
+#detail,
+#create,
+#edit {
+  /* display: none; */
+}

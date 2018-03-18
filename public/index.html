@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Home</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+</head>
+
+<body>
+	<h2>The Small Council</h2>
+	<h3>A Game of Thrones Forum</h3>
+
+	<ul id="nav">
+		<li><a href="" class="viewSearch">View All Posts</a></li> |
+		<li><a href="" class="viewCreate">Create Post</a></li>
+	</ul>
+
+	<form id="search" class="view">
+		<div id="result"></div>
+	</form>
+
+	<section id="detail" class="view">
+		<fieldset>
+			<legend>Post</legend>
+			<div>
+				<label for="author">Posted By</label>
+				<span class="author"></span>
+			</div>
+			<div>
+				<label for="title">Title</label>
+				<span class="title"></span>
+			</div>
+			<div>
+				<label for="content">Content</label>
+				<span class="content"></span>
+			</div>
+			<div>
+				<label for="date">Posted At</label>
+				<span class="date"></span>
+			</div>			
+			<div>
+				<label for="comments">Comments</label>
+				<span class="comments"></span>
+			</div>
+			<a href="" class="edit">Edit</a>
+			<a href="" class="remove">Remove</a>
+			<a href="" class="leave-comment">Leave a Comment</a>
+		</fieldset>
+		<a href="" class="viewList">&lt; Back to list results </a>
+	</section>
+
+	<form id="create" class="view">
+		<fieldset>
+			<legend>Create a Post</legend>
+			<div>
+				<label for="name">Nickname</label>
+				<input type="text" name="author">
+			</div>
+			<div>
+				<label for="name">Title</label>
+				<input type="text" name="title">
+			</div>
+			<div>
+				<label for="name">Content</label>
+				<textarea rows="4" cols="50" name="content"></textarea>
+			</div>
+
+			<button type="submit">Submit</button>
+		</fieldset>
+	</form>
+
+	<form id="comment-wizard" class="view">
+		<fieldset>
+			<legend>Comment</legend>
+			<div>
+				<label for="name">Nickname</label>
+				<input type="text" name="author">
+			</div>
+			<div>
+				<label for="name">Content</label>
+				<textarea rows="4" cols="50" name="content"></textarea>
+			</div>
+
+			<button type="submit">Submit</button>
+		</fieldset>
+	</form>
+
+	<form id="edit" class="view">
+		<fieldset>
+			<legend>Edit</legend>
+			<div>
+				<label for="name">Title</label>
+				<input type="text" name="title">
+			</div>
+			<div>
+				<label for="name">Content</label>
+				<textarea rows="4" cols="50" name="content"></textarea>
+			</div>
+			<button type="submit">Submit</button>
+		</fieldset>
+	</form> 
+
+	<div class="opacity-box"></div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/fetch.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
