@@ -247,6 +247,10 @@ fieldset legend {
 
 @media screen and (max-width: 768px) {
 
+  fieldset {
+    background-color: #FDFDFD
+  }
+
   body {
     width: 100vw;
     max-height: 100vh;
