@@ -13,6 +13,8 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
 </head>
 
 <header>
@@ -22,8 +24,10 @@
 	</div>
 
 	<div id="nav">
-		<button><a href="" class="viewSearch"><i class="fas fa-eye"></i> All Posts</a></button>
-		<button><a href="" class="viewCreate"><i class="fas fa-pen-square"></i>	Create Post</a></button>
+		<button class="desktop"><a href="" class="viewSearch"><i class="fas fa-eye"></i> All Posts</a></button>
+		<button class="desktop"><a href="" class="viewCreate"><i class="fas fa-pen-square"></i>	Create Post</a></button>
+		<button class="mobile"><a href="" class="viewSearch"><i class="fas fa-eye"></i></a></button>
+		<button class="mobile"><a href="" class="viewCreate"><i class="fas fa-pen-square"></i></a></button>
 	</div>
 </header>
 	<div class="container">
@@ -33,30 +37,26 @@
 
 		<section id="detail" class="view">
 			<fieldset>
-				<legend>Post</legend>
-				<div>
-					<label for="author">Posted By</label>
-					<span class="author"></span>
-				</div>
 				<div>
 					<label for="title">Title</label>
 					<span class="title"></span>
 				</div>
 				<div>
+					<label for="author">Posted By</label>
+					<span class="author"></span>
+					<span>on</span>
+					<span class="date"></span>
+				</div>			
+				<div class="post-content-div">
 					<label for="content">Content</label>
 					<span class="content"></span>
 				</div>
-				<div>
-					<label for="date">Posted At</label>
-					<span class="date"></span>
-				</div>			
-				<div>
+				<div class="comment-div">
 					<label for="comments">Comments</label>
 					<span class="comments"></span>
 				</div>
-				<a href="" class="leave-comment">Leave a Comment</a>
+				<button><a href="" class="leave-comment">Leave a Comment</a></button>
 			</fieldset>
-			<a href="" class="viewList">&lt; Back to list results </a>
 		</section>
 
 		<form id="create" class="view">
@@ -94,9 +94,8 @@
 				<button type="submit">Submit</button>
 			</fieldset>
 		</form>
-
-		<div class="opacity-box"></div>
 	</div>
+	<div class="opacity-box"></div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/fetch.js"></script>
 	<script src="js/app.js"></script>

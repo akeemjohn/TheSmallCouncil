@@ -31,17 +31,6 @@ body {
   height: 100%;
 }
 
-.opacity-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  z-index: 1;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-}
-
 .hidden {
   display: none;
 }
@@ -178,13 +167,172 @@ label {
 .detail {
   text-decoration: none;
   color: #C72230;
-  text-transform: uppercase;
   font-weight: 700;
   width: 50%;
   max-height: 100%;
   overflow: hidden;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.detail:hover {
+  color: rgba(199, 34, 48, 0.5)
 }
 
 .detail:hover {
   cursor: pointer;
+}
+
+fieldset {
+  display: flex;
+  border: 1px solid #333036;
+  background-color: rgb(242,238,224, 0.5);
+  flex-direction: column;
+}
+
+.title {
+  color: #C72230;
+  font-weight: 700;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.author, .date, .comment-author {
+  color: #C72230;
+}
+
+.content {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.post-content-div {
+  margin-top: 3%;
+}
+
+.comment-div {
+  margin-top: 5%;
+}
+
+.leave-comment {
+  text-decoration: none;
+  color: #C72230;
+  font-weight: 700
+}
+
+.leave-comment:hover {
+  cursor: pointer;
+}
+
+.comments li {
+  list-style-type: none;
+  padding-top: 1%;
+  padding-bottom: 1%
+}
+
+.comment-content {
+  font-family: 'Berkshire Swash', cursive;
+
+}
+
+fieldset button {
+  margin-top: 3%;
+}
+
+fieldset legend {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+}
+
+.mobile  {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    width: 100vh;
+    max-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    order: 1;
+    height: 30%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile  {
+    display: inline;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1em;
+  }
+
+  #title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #nav button {
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    order: 2;
+    height: 70%;
+    max-width: 100%;
+    overflow: scroll;
+    z-index: 100;
+  }
+
+  #search {
+    order: 1;
+    width: 100%;
+  }
+
+  #result ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .list-results {
+    width: 100%;
+    height: 5em;
+    overflow: hidden;
+  }
+
+  .time-stamp, .comment-count, .author-name {
+    margin: 2%;
+    padding: 1px;
+    font-size: 1em;
+  }
+
+  .detail {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 30%;
+  }
+
 }

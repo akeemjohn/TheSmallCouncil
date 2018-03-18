@@ -47,7 +47,7 @@ const renderDetail = function (store) {
     let dateComments = new Date(val.publishedAt); 
     (dateComments.getMonth() + 1) + '/' + dateComments.getDate() + '/' + dateComments.getFullYear();
     
-    return `<li>${val.author} said: "${val.content}" on ${dateComments.toString().split(" ").slice(0, 5).join(" ")}
+    return `<li><span class="comment-author">${val.author}</span> said: <span class="comment-content">"${val.content}"</span> on <span class="date">${dateComments.toString().split(" ").slice(0, 5).join(" ")}</span>
     </li>`;
   }).join(''));
 };
@@ -122,7 +122,6 @@ const handleAddComment = function(event){
 
 const handleUpdate = function (event) {
   event.preventDefault();
-  console.log('event.data', event.data)
   const store = event.data;
   const el = $(event.target);
 
@@ -134,7 +133,6 @@ const handleUpdate = function (event) {
   // api.update(document, store.token)
   api.update(document)
     .then(response => {
-      console.log(response);
       store.item = response;
       store.list = null; //invalidate cached list results
       renderDetail(store);
