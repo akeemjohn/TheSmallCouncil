@@ -62,8 +62,6 @@ var api = {
   },  
   update: function (document) {
     const url = buildUrl(`${ITEMS_URL}/${document.id}`);
-    
-    // console.log('dev tools', document);
 
     return fetch(url, {
       method: 'PUT',
@@ -74,10 +72,6 @@ var api = {
       body: document ? JSON.stringify(document) : null
     })
     .then(normalizeResponseErrors)
-    // .then(res => {
-    //   console.log(res.json());
-    //   return res;
-    // })
       .then(res => res.json());
   },
   remove: function (id) {
@@ -92,7 +86,6 @@ var api = {
       .then(res => res.text());
   },
   comment: function(document) {
-    console.log('document.id', document.id);
     const url = buildUrl(`${ITEMS_URL}/${document.id.id}/${COMMENTS_URL}`);
 
     return fetch(url, {
