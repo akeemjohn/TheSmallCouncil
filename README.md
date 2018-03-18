@@ -1,6 +1,6 @@
 # The Small Council
 <p align='center'>
-    <img width='600' src='https://imgur.com/a/Ca3hz'>	
+    <img width='600' src='https://nicolegilbert.surge.sh/images/smallcouncil.png'>	
 </p>
 
 ## PURPOSE
